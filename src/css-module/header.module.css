@@ -1,0 +1,52 @@
+.header{
+    background: #333;
+    height: 80vh;
+    max-height: 100%;
+    font-size: 18px;
+    padding: 5rem 10rem;
+    overflow: hidden;
+    perspective: 100px;
+    position: relative;
+    transform-style: preserve-3d;
+    text-align: center;
+}
+
+
+.header:after{
+    background: #F9FCFF;
+    content: "";
+    height: 40rem;
+    left: -5%;
+    position: absolute;
+        right: -5%;
+        top: 90%;
+    transform-origin: 0 0;
+    transform: rotateZ(-4deg);
+}
+
+.header_content{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.header_title, .header_subtitle{
+    color: #fff;
+}
+
+.header_subtitle {
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+.header_button {
+    transform: translateZ(.1px);
+    position: relative;
+    z-index: 10;
+}
+
+@media screen and (min-width: 800px){
+    .header_content{
+        justify-content: space-between;
+    }
+}
