@@ -1,34 +1,24 @@
 import React from 'react'
-import styles from '../css-module/header.module.css'
-
-const SellingPitch = (props) => {
-    return (
-        <div>
-            <h1 className={styles.header_title}>Your awesome selling pitch</h1>
-            <h3 className={styles.header_subtitle}>A subtitle of the selling pitch</h3>
-            <p className={styles.header_button}>Button</p>
-        </div>
-    )
-}
-
+import Hero from './hero'
+import styles from '../css-module/form.module.css'
 
 const ContactForm = (props) => {
     return (
-        <div>
-            <form>
-                <div>
+        <div className={styles.form_container}>
+            <form className={styles.form}>
+                <div className={styles.form_input}>
                     <label>Nombre</label>
                     <input type="text" placeholder="Nombre"></input>
                 </div>
-                <div>
+                <div className={styles.form_input}>
                     <label>Correo</label>
                     <input type="email" placeholder="Email"></input>
                 </div>
-                <div>
+                <div className={styles.form_input}>
                     <label>Telefono</label>
                     <input type="text" placeholder="Telefono"></input>
                 </div>
-                <div>
+                <div className={styles.form_input}>
                     <label>Correo</label>
                     <textarea></textarea>
                 </div>
@@ -37,14 +27,12 @@ const ContactForm = (props) => {
     )
 }
 
-
 const Header = (props) => {
     return (
-        <header className={styles.header}>
-            <section className={styles.header_content}>
-                <SellingPitch/>
-            </section>
-        </header>
+        <div>
+            <Hero/>
+            <ContactForm/>
+        </div>
     )
 }
 
