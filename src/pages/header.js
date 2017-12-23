@@ -6,6 +6,7 @@ const ContactForm = (props) => {
     return (
         <div className={styles.form_container}>
             <form className={styles.form}>
+                <h2>Contactenos</h2>
                 <div className={styles.form_input}>
                     <label>Nombre</label>
                     <input type="text" placeholder="Nombre"></input>
@@ -22,6 +23,10 @@ const ContactForm = (props) => {
                     <label>Correo</label>
                     <textarea></textarea>
                 </div>
+                <div className={styles.form_input}>
+                    <button>Enviar</button>
+                </div>
+                
             </form>
         </div>
     )
@@ -29,10 +34,10 @@ const ContactForm = (props) => {
 
 const Header = (props) => {
     return (
-        <div>
+        <header>
             <Hero/>
             <ContactForm/>
-        </div>
+        </header>
     )
 }
 
