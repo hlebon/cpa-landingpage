@@ -1,6 +1,5 @@
 .hero{
     align-items: center;
-    background: #333;
     display: flex;
     font-size: 18px;
     height: 100vh;
@@ -10,10 +9,27 @@
     position: relative;
     text-align: center;
     transform-style: preserve-3d;
+    perspective: 100px;
+}
+
+.hero:before{
+    animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+    background: linear-gradient(to bottom, rgba(219, 9, 9, 0), rgba(0,0,0,0.8)), 
+        url(../img/backgroundHero.jpg) no-repeat bottom;
+    background-size: cover;
+    content: "";
+    opacity: 0;
+    position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    z-index: -1;
 }
 
 
 .hero:after{
+    animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
     background: #F9FCFF;
     content: "";
     height: 40rem;
@@ -23,6 +39,7 @@
         top: 90%;
     transform-origin: 0 0;
     transform: rotateZ(-4deg);
+    z-index: 0;
 }
 
 .hero_content{
@@ -36,8 +53,12 @@
 }
 
 
-.hero_title, .hero_subtitle{
-    color: #fff;
+.hero_title, .hero_subtitle, .hero_button{
+    color:white !important;
+}
+
+.hero_button > * {
+    color:white !important;
 }
 
 .hero_subtitle {
@@ -50,6 +71,59 @@
     position: relative;
     z-index: 10;
 }
+
+.animate_pop_in {
+    animation: pop-in .7s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+    opacity: 0;
+}
+
+.rocky_dashed {
+    animation-delay: 1s;
+}
+  
+.hero_title {
+    animation-delay: 1.2s;
+}
+  
+.hero_subtitle {
+    animation-delay: 1.4s;
+}
+
+.hero_button {
+    animation-delay: 1.6s;
+}
+
+
+
+/* Animations */
+@keyframes fade-slide-down{
+    0%{
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+}
+
+@keyframes rotate-up {
+    100% {
+      transform: rotateZ(-4deg);
+    }
+  }
+
 
 /*
 @media screen and (min-width: 800px){

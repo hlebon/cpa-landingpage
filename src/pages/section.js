@@ -25,23 +25,27 @@ const cardInfo = [
 
 
 const ContainerCard = (props) => {
+    const { card } = props
+    console.log(card)
+
     return (
         <div>
-            Container Card
+            {card.id}
         </div>
     )
 }
+
+/*
 ContainerCard.PropTypes = {
     card: PropTypes.object.isRequired
-}
-
+}*/
 
 const Section = (props) => {
     return (
-        <section>
-            {cardInfo.map( ( card ) => {
+        <section id="contactForm">
+            {cardInfo.map( ( card, index ) => {
                 return (
-                    <ContainerCard/>
+                    <ContainerCard key={index} card={card}/>
                 )
             })}
         </section>
