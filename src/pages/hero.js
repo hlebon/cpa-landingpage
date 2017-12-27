@@ -1,6 +1,6 @@
+import styles from '../css-module/hero.module.css'
 import React from 'react'
 import Link from "gatsby-link";
-import styles from '../css-module/hero.module.css'
 
 const SellingPitch = (props) => {
     return (

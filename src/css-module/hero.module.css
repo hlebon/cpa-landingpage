@@ -1,3 +1,10 @@
+
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after{
+    animation-play-state: paused !important;
+}
+
 .hero{
     align-items: center;
     display: flex;
@@ -13,7 +20,7 @@
 }
 
 .hero:before{
-    animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
+    animation: fade-slide-down 1s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
     background: linear-gradient(to bottom, rgba(219, 9, 9, 0), rgba(0,0,0,0.8)), 
         url(../img/backgroundHero.jpg) no-repeat bottom;
     background-size: cover;
@@ -26,7 +33,6 @@
         left: 0;
     z-index: -1;
 }
-
 
 .hero:after{
     animation: rotate-up .5s .5s cubic-bezier(0, 0.5, 0, 1) forwards;
@@ -77,10 +83,6 @@
     opacity: 0;
 }
 
-.rocky_dashed {
-    animation-delay: 1s;
-}
-  
 .hero_title {
     animation-delay: 1.2s;
 }
@@ -140,7 +142,7 @@
     }
 
     .hero_content > div{
-        width: 45%;
+        width: 55%;
     }
 }
 

@@ -1,27 +1,24 @@
+import stylesHero from '../css-module/hero.module.css'
+import styles from '../css-module/form.module.css'
 import React from 'react'
 import Hero from './hero'
-import styles from '../css-module/form.module.css'
 
 const ContactForm = (props) => {
     return (
         <div className={styles.form_container}>
-            <form className={styles.form}>
-                <h2>Contactenos</h2>
+            <form className={`${styles.form} ${stylesHero.animate_pop_in}`}>
+                <h2 className={styles.form_title}>Contactenos</h2>
                 <div className={styles.form_input}>
-                    <label>Nombre</label>
-                    <input type="text" placeholder="Nombre"></input>
+                    <input type="text" placeholder="Nombre" className={styles.input_line}></input>
                 </div>
                 <div className={styles.form_input}>
-                    <label>Correo</label>
-                    <input type="email" placeholder="Email"></input>
+                    <input type="email" placeholder="Email" className={styles.input_line}></input>
                 </div>
                 <div className={styles.form_input}>
-                    <label>Telefono</label>
-                    <input type="text" placeholder="Telefono"></input>
+                    <input type="text" placeholder="Telefono" className={styles.input_line}></input>
                 </div>
                 <div className={styles.form_input}>
-                    <label>Correo</label>
-                    <textarea></textarea>
+                    <textarea placeholder="Mensaje" className={styles.input_line}></textarea>
                 </div>
                 <div className={styles.form_input}>
                     <button>Enviar</button>
