@@ -488,9 +488,10 @@ html {
     padding-right: 0;
     padding-top: 0;
     margin-bottom: calc(1.45rem - 1px);
-    background: hsla(0, 0%, 0%, 0.2);
+    background: hsla(231, 84%, 54%, 0.4);
     border: none;
-    height: 1px;
+    height: 2px;
+    width: 75%;
   }
   address {
     margin-left: 0;

@@ -1,12 +1,30 @@
-/*#region Section*/
+/*se encuentrad definido en otro archivo*/
+.button{
+    background: rgb(33, 150, 243);
+    padding: 0.5rem;
+    color: white;
+    border-radius: 7px;
+    border: 0;
+    font-size: 16px;
+}
 
+/*#region Section*/
 .about_section{
+    width: 100%;
+    height: auto;
+    background: url(../img/wave.svg) bottom;
+    background-position: center bottom;
+    background-size: 1440px 126px;
+    background-repeat: repeat-x;
+}
+
+.about_container{
     width: 90%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    background:white;
-    padding: 3.0rem 0px;
+    /*background:white;*/
+    padding: 3.0rem 0px .5rem 0;
 }
 
 .section_card{
@@ -15,7 +33,8 @@
     width: 100%;
     height: auto;
     margin: 2.0rem auto;
-    /*box-shadow: 1px 1px 25px 0 rgba(46,61,73,.2);*/
+    background: white;
+    box-shadow: 2px 2px 25px 0 rgba(90, 112, 129, 0.3);
     border-radius: .375rem;
 }
 
@@ -37,7 +56,12 @@
 
 .section_info_title{
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
+}
+
+.section_info_subtitle{
+    font-size: 20px;
+    width: 100%;
 }
 
 .section_info_content{
@@ -73,18 +97,19 @@
         width: 60%;
         padding: 1.4rem 0;
         padding-left: 2.2rem;
+        padding-right: 1.3rem;
     }
 }
 
 @media screen and (min-width: 1000px){
-    .about_section{
+    .about_container{
         width: 90%;
         justify-content: space-between;
     }
 
     .section_card{
-        width: 50%;
-        margin: 0 auto 2.0rem auto;
+        width: calc( 50% - 50px);
+        margin: 0 25px 0rem auto;
     }
 
     .section_img_container{
@@ -105,6 +130,48 @@
     max-height: 300px;
     background: gray;
 }
+/*#endregion*/
 
+/*#region callToAction*/
+.callToAction{
+    width: 100%;
+    height: auto;
+    background-color: #0052CC;
+    margin: 0 0 2rem 0; 
+    padding: 4rem;
+}
+
+.callToAction_container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.callToAction_container_p{
+    color: white;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 120%;
+}
+
+.callToAction_container_btn{
+    width:  250px;
+    margin: auto;
+
+}
+
+.callToAction_container_btn > button{
+    background: whitesmoke;
+    color: #0052CC;
+    border: #0052CC;
+    border-radius: 25px;
+    padding: 0.8rem 1.3rem;
+    width: 250px;
+    margin: auto;
+    font-size: 22px;
+}
 
 /*#endregion*/
