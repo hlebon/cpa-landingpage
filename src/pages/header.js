@@ -18,10 +18,10 @@ const ContactForm = (props) => {
                     <input type="text" placeholder="Telefono" className={styles.input_line}></input>
                 </div>
                 <div className={styles.form_input}>
-                    <textarea placeholder="Mensaje" className={styles.input_line}></textarea>
+                    <textarea placeholder="Mensaje" className={styles.input_line} rows="3"></textarea>
                 </div>
                 <div className={styles.form_input}>
-                    <button>Enviar</button>
+                    <button className={styles.button}>Enviar</button>
                 </div>
                 
             </form>

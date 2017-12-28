@@ -7,29 +7,21 @@ import React from 'react'
 const cardInfo = [
     {
         id: 1, 
-        title: "Sed ut perspiciatis unde omnis iste natus",
-        description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
+        title: "Beneficios",
+        content: ["Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"],
         img: segment
     },
     { 
         id: 2,
-        title: "Sed ut perspiciatis unde omnis iste natus",
-        description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur",
+        title: "Servicios",
+        content: ["Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur"],
         img: create
-    },
-    { 
-        id: 3,
-        title: "Sed ut perspiciatis unde omnis iste natus",
-        description: "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum",
-        img: analytics
     }
-
 ]
 
 
 const ContainerCard = (props) => {
     const { card } = props
-    console.log(card)
 
     return (
         <div className="section_card">
@@ -37,8 +29,12 @@ const ContainerCard = (props) => {
                 <img src={card.img} alt="segment" className="section_card_img"/>
             </div>
             <div className="section_info">
-                <h4 className="section_info_title">{card.title}</h4>
-                <p className="section_info_content">{card.description}</p>
+                <h3 className="section_info_title">{card.title}</h3>
+                <ul className="section_info_content">
+                {card.content.map( (li, key) =>
+                    <li key={key}>{li}</li>
+                )}
+                </ul>
             </div>
         </div>
     )

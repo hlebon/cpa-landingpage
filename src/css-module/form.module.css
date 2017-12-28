@@ -3,7 +3,7 @@
 }
 
 .form{
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 1.3rem 1rem;
     box-shadow: 5px 5px 25px 0px rgba(46,61,73,0.2);
@@ -27,6 +27,8 @@
     font-weight: 300;
     border: 0.8px solid rgba(219, 219, 219, 0.808);
     border-bottom: 1.2px solid rgba(219, 219, 219, 0.931);
+    resize: none;
+    overflow: hidden;
 }
 
 .input_line:focus{
@@ -35,23 +37,38 @@
     transition: 2s cubic-bezier(0, 0.9, 0.3, 1.2);
 }
 
+.button{
+    background: rgb(33, 150, 243);
+    padding: 0.5rem;
+    color: white;
+    border-radius: 7px;
+    border: 0;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 960px){
+    .form{
+        width: 60%;
+    }
+}
+
 
 @media screen and (min-width: 1200px){
     .form_container{
         position: absolute;
-        width: 40%;
-        top: 20vh;
-        right: 20px;
+        width: 50%;
+        top: 25vh;
+        right: 10px;
         transition: 2s cubic-bezier(0, 0.9, 0.3, 1.2);
     }
 
     .form{
-        max-width: 470px;
+        max-width: 370px;
         border: 0;
         background: linear-gradient(160deg, rgba(33, 150, 243, 0.7) 40%, rgba(145, 90, 233,0.8) 80%);
     }
 
     .form_title{
-        color: whitesmoke;
+        color: white;
     }
 }

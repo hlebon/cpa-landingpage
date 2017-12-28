@@ -1,6 +1,7 @@
 import React from "react"
 import Header from './header'
 import Section from './section'
+import Footer from './footer'
 import '../layout/index.css'
 
 document.body.className += " js-loading"
@@ -17,6 +18,7 @@ class Index extends React.Component{
             <div>
                 <Header/>
                 <Section/>
+                <Footer/>
             </div>
         )
     }
