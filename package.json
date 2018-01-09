@@ -5,10 +5,14 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "gatsby": "^1.9.145",
     "gatsby-link": "^1.6.32"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
   }
 }
