@@ -5,14 +5,6 @@ import CallToAction from './callToAcction'
 import Footer from './footer'
 import '../layout/index.css'
 
-document.body.className += " js-loading"
-window.addEventListener("load", showPage, false)
-
-function showPage(){
-    document.body.className = document.body.className.replace("js-loading", "")
-}
-
-
 class Index extends React.Component{
     render(){
         return (
@@ -25,7 +17,5 @@ class Index extends React.Component{
         )
     }
 }
-
-
 
 export default Index;
