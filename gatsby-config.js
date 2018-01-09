@@ -1,5 +1,5 @@
 module.exports = {
-    pathPrefix: 'cpa-landingpage-demo',
+    pathPrefix: '/cpa-landingpage-demo',
     siteMetadata: {
         title: 'CPA Taxes Consulting Landing Page'
     }
