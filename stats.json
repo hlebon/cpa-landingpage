@@ -1,0 +1,64 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-footer-js": [
+      "component---src-pages-footer-js-76710319cd45c916109a.js",
+      "component---src-pages-footer-js-76710319cd45c916109a.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-b9418eb37874882c3a92.js",
+      "component---src-pages-index-js-b9418eb37874882c3a92.js.map"
+    ],
+    "component---src-pages-hero-js": [
+      "component---src-pages-hero-js-7d539d49dc327f5e13ba.js",
+      "component---src-pages-hero-js-7d539d49dc327f5e13ba.js.map"
+    ],
+    "component---src-pages-call-to-acction-js": [
+      "component---src-pages-call-to-acction-js-c8d67107e7573b25c71f.js",
+      "component---src-pages-call-to-acction-js-c8d67107e7573b25c71f.js.map"
+    ],
+    "path---hero": [
+      "path---hero-a0e39f21c11f6a62c5ab.js",
+      "path---hero-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-header-js": [
+      "component---src-pages-header-js-55c3e8665c0325513b74.js",
+      "component---src-pages-header-js-55c3e8665c0325513b74.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "commons": [
+      "commons-f88f115c25ff593f260e.js",
+      "build-js-styles.css",
+      "commons-f88f115c25ff593f260e.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-pages-section-js": [
+      "component---src-pages-section-js-edf1a550d6cd490e21d9.js",
+      "component---src-pages-section-js-edf1a550d6cd490e21d9.js.map"
+    ],
+    "path---footer": [
+      "path---footer-a0e39f21c11f6a62c5ab.js",
+      "path---footer-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---call-to-acction": [
+      "path---call-to-acction-a0e39f21c11f6a62c5ab.js",
+      "path---call-to-acction-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---section": [
+      "path---section-a0e39f21c11f6a62c5ab.js",
+      "path---section-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-2b5fce1b3b1704095426.js",
+      "build-js-styles.css",
+      "app-2b5fce1b3b1704095426.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---header": [
+      "path---header-a0e39f21c11f6a62c5ab.js",
+      "path---header-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}
