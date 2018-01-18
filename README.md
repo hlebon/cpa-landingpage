@@ -1,10 +1,24 @@
-# gatsby-starter-hello-world
-Starter with the bare essentials needed for a [Gatsby](https://www.gatsbyjs.org/) site
+<h1>Landing Page</h1>
+<p>A landing page created with gatsby</p>
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-site https://github.com/gatsbyjs/gatsby-starter-hello-world
-```
+## Table of Contents
 
-## Running in development
-`gatsby develop`
+- [Note](#note)
+- [Installing](#installing)
+- [Launch](#launch)
+- [Something is missing?](#something-is-missing)
+
+## Note
+You need to install [yarn](https://yarnpkg.com/en/docs/install) before all
+
+## Installing
+Installing the app and dependencies:
+clone the repo and inside the folder run
+### `yarn install`
+
+## Launch
+Inside the project run:
+### `gatsby develop`
+
+## Something is Missing?
+If you can't install or launch this repo you can contact me on [twitter](https://twitter.com/hanslgarcia)
