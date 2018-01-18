@@ -1,2 +1,0 @@
-webpackJsonp([0xa425df45010],{83:function(e,t,a){"use strict";function o(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var n=a(2),r=o(n),u=function(e){return r.default.createElement("footer",{className:"footer-container"},"Este es el footer de la pagina!!!")};t.default=u,e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-footer-js-76710319cd45c916109a.js.map
