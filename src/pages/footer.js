@@ -11,8 +11,10 @@ const Footer = (props) => {
             </div>
             <div className="footer-section">
                 <div className="footer-section-content">
-                    <Link to="/" className="footer-link">facebook</Link>
-                    <Link to="/" className="footer-link">instagram</Link>
+                    <p> hola a todos 
+                        <Link to="/" className="footer-link">facebook</Link>
+                        <Link to="/" className="footer-link">instagram</Link>
+                    </p>
                 </div>
             </div>
         </footer>

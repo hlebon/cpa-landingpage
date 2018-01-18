@@ -60,13 +60,10 @@
 }
 
 
-.hero_title, .hero_subtitle, .hero_button{
+.hero_title, .hero_subtitle{
     color:white !important;
 }
 
-.hero_button > * {
-    color:white !important;
-}
 
 .hero_subtitle {
     margin-bottom: 5rem;
