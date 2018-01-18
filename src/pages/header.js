@@ -21,7 +21,7 @@ const ContactForm = (props) => {
                     <textarea placeholder="Mensaje" className="input_line" rows="3"></textarea>
                 </div>
                 <div className="form_input">
-                    <button className="button">Enviar</button>
+                    <button className="btn btn-primary">Enviar</button>
                 </div>
             </form>
         </div>

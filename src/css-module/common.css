@@ -1,11 +1,21 @@
 /*se encuentrad definido en otro archivo*/
-.button{
-    background: rgb(33, 150, 243);
+
+.btn{
     padding: 0.5rem;
-    color: white;
     border-radius: 7px;
-    border: 0;
     font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background: white;
+    border: 1px solid hsl(114, 88%, 36%);
+    color: hsl(114, 88%, 36%);
+}
+
+.btn-primary:hover{
+    background:  hsl(114, 88%, 36%);
+    color: white;
 }
 
 /*#region Section*/
@@ -34,7 +44,6 @@
     height: auto;
     margin: 2.0rem auto;
     background: white;
-    box-shadow: 2px 2px 25px 0 rgba(90, 112, 129, 0.3);
     border-radius: .375rem;
 }
 
@@ -55,29 +64,98 @@
 }
 
 .section_info_title{
-    font-size: 22px;
-    font-weight: 700;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 .section_info_subtitle{
-    font-size: 20px;
+    font-size: 22px;
     width: 100%;
 }
 
 .section_info_content{
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(82, 82, 82);
 }
 
+/*#region Footer*/
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    max-height: 300px;
+    background:white;
+}
+
+.footer-section{
+    width: 100%;
+}
+
+.footer-section:nth-child(2){
+    order: -1;
+}
+
+
+
+/*#endregion*/
+
+/*#region callToAction*/
+.callToAction{
+    width: 100%;
+    height: auto;
+    background-color: #0052CC;
+    margin: 0; 
+    padding: 1rem;
+}
+
+.callToAction_container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.callToAction_container_p{
+    width: 100%;
+    color: white;
+    font-size: 32px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 120%;
+}
+
+.callToAction_container_btn{
+    width:  150px;
+    margin: auto;
+
+}
+
+.callToAction_container_btn > button{
+    background: whitesmoke;
+    color: #0052CC;
+    border: #0052CC;
+    border-radius: 25px;
+    padding: 0.8rem 1.3rem;
+    width: 150px;
+    margin: auto;
+    font-size: 22px;
+}
+
+/*#endregion*/
+
+
 @media screen and (min-width: 470px){
     .section_card{
-        width: 85%;
+        width: 100%;
     }
 }
 
 @media screen and (min-width: 570px){
     .section_card{
-        width: 75%;
+        width: 100%;
     }
 }
 
@@ -119,59 +197,8 @@
     .section_info{
         width: 95%;
     }
+
+    .callToAction_container {
+        width: 40%;
+    }
 }
-
-/*#endregion Section*/
-
-/*#region Footer*/
-.footer-container{
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    background: gray;
-}
-/*#endregion*/
-
-/*#region callToAction*/
-.callToAction{
-    width: 100%;
-    height: auto;
-    background-color: #0052CC;
-    margin: 0 0 2rem 0; 
-    padding: 4rem;
-}
-
-.callToAction_container{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.callToAction_container_p{
-    color: white;
-    font-size: 32px;
-    font-weight: 200;
-    text-align: center;
-    letter-spacing: 1px;
-    line-height: 120%;
-}
-
-.callToAction_container_btn{
-    width:  250px;
-    margin: auto;
-
-}
-
-.callToAction_container_btn > button{
-    background: whitesmoke;
-    color: #0052CC;
-    border: #0052CC;
-    border-radius: 25px;
-    padding: 0.8rem 1.3rem;
-    width: 250px;
-    margin: auto;
-    font-size: 22px;
-}
-
-/*#endregion*/
