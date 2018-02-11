@@ -5,7 +5,7 @@ import Hero from './hero'
 
 const ContactForm = (props) => {
     return (
-        <div className="form_container">
+        <div id="contacto" className="form_container">
             <form className="form animate_pop_in">
                 <h2 className="form_title">Contactenos</h2>
                 <div className="form_input">

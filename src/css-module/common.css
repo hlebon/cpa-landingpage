@@ -1,5 +1,13 @@
 /*se encuentrad definido en otro archivo*/
-p {
+ul {
+    list-style: none;
+}
+  
+ul li:before {
+    content: '✓';
+}
+
+p{
     margin-bottom: 0 !important;
   }
 
@@ -13,6 +21,14 @@ p {
   a:hover {
     color: #457DFB;
     right: 0;
+    text-decoration: none;
+  }
+
+  a.footer-link {
+    text-decoration: underline;
+  }
+
+  a.footer-link:hover {
     text-decoration: none;
   }
   
@@ -98,6 +114,7 @@ p {
     margin: 2.0rem auto;
     background: white;
     border-radius: .375rem;
+    box-shadow: 0px -1px 1px rgba(219, 219, 219, .808);
 }
 
 .section_img_container{
@@ -124,6 +141,7 @@ p {
 .section_info_subtitle{
     font-size: 22px;
     width: 100%;
+    padding-bottom: 5px;
 }
 
 .section_info_content{
@@ -148,6 +166,15 @@ p {
 
 .footer-section:nth-child(2){
     order: -1;
+}
+
+.footer-link{
+    padding: 5px 0;
+    margin : 5px;
+}
+
+.footer-section-content{
+    text-align: right;
 }
 
 
@@ -186,15 +213,22 @@ p {
 
 }
 
-.callToAction_container_btn > button{
+.callToAction_container_btn > button, .hero-btn{
     background: whitesmoke;
     color: #0052CC;
-    border: #0052CC;
+    border: 2px solid #0052CC;
     border-radius: 25px;
     padding: 0.8rem 1.3rem;
     width: 150px;
-    margin: auto;
+    margin: .5em;
     font-size: 22px;
+}
+
+.callToAction_container_btn > button:hover{
+    background: #0052CC;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    cursor: pointer;
 }
 
 /*#endregion*/
@@ -230,11 +264,17 @@ p {
         padding-left: 2.2rem;
         padding-right: 1.3rem;
     }
+
+    .footer-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width: 1000px){
     .about_container{
-        width: 90%;
+        width: 80%;
         justify-content: space-between;
     }
 

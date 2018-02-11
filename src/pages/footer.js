@@ -9,14 +9,6 @@ const Footer = (props) => {
                     <small>&copy; Copyright 2018, CPA-Taxes Consulting</small>
                 </div>
             </div>
-            <div className="footer-section">
-                <div className="footer-section-content">
-                    <p> hola a todos 
-                        <Link to="/" className="footer-link">facebook</Link>
-                        <Link to="/" className="footer-link">instagram</Link>
-                    </p>
-                </div>
-            </div>
         </footer>
     )
 } 
