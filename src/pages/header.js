@@ -7,21 +7,21 @@ const ContactForm = (props) => {
     return (
         <div id="contacto" className="form_container">
             <form className="form animate_pop_in">
-                <h2 className="form_title">Contactenos</h2>
+                <h2 className="form_title">Contact</h2>
                 <div className="form_input">
-                    <input type="text" placeholder="Nombre" className="input_line"></input>
+                    <input type="text" placeholder="Name" className="input_line"></input>
                 </div>
                 <div className="form_input">
                     <input type="email" placeholder="Email" className="input_line"></input>
                 </div>
                 <div className="form_input">
-                    <input type="text" placeholder="Telefono" className="input_line"></input>
+                    <input type="text" placeholder="Phone" className="input_line"></input>
                 </div>
                 <div className="form_input">
-                    <textarea placeholder="Mensaje" className="input_line" rows="3"></textarea>
+                    <textarea placeholder="Message" className="input_line" rows="3"></textarea>
                 </div>
                 <div className="form_input">
-                    <button className="btn btn-primary">Enviar</button>
+                    <button className="btn btn-primary">SEND</button>
                 </div>
             </form>
         </div>

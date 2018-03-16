@@ -9,9 +9,9 @@ const CallToAction = () => {
     return (
         <section className="callToAction">
             <div className="callToAction_container">
-                <p className="callToAction_container_p">No pierdas esta oportunidad, ponte en contacto con nosotros</p>
+                <p className="callToAction_container_p">Work with our amazing team!</p>
                 <div className="callToAction_container_btn">
-                    <button onClick={() => goTo()}>Contacto</button>
+                    <button onClick={() => goTo()}>Contact</button>
                 </div>
             </div>
         </section>
